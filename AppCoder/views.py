@@ -10,3 +10,18 @@ def curso(self):
 
     documentoDeTexto = f'---> Curso: {curso.nombre} Camada: {curso.camada}'
     return HttpResponse(documentoDeTexto)
+
+def inicio(request):
+    return render(request, 'inicio.html')
+
+def cursos(request):
+    return render(request, 'cursos.html')
+
+def profesores(request):
+    return render(request, 'profesores.html')
+
+def estudiantes(request):
+    return render(request, 'estudiantes.html')
+
+def entregables(request):
+    return render(request, 'entregables.html')
